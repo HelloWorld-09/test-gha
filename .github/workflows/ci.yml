@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - '**'
-    paths-ignore:
-      - '.github/workflows/**'
-      - '**.md'
 
 jobs:
   ci:
