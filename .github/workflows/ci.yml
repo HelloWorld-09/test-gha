@@ -1,0 +1,15 @@
+name: test-gha
+on:
+  push:
+    branches:
+      - '**'
+    paths-ignore:
+      - .github/workflows/**
+      - '**.md'
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test_step
+        run: echo "Hello World"
