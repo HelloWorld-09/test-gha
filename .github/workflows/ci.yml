@@ -8,6 +8,10 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+      - name: Initial List
+        run: ls
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Build Py zip
         run: |
           mkdir python
