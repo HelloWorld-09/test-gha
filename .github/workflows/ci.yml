@@ -8,5 +8,8 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - name: test_step
-        run: echo "Hello World"
+      - name: Build Py zip
+        run: |
+          mkdir python
+          pip3 install requirements.txt python
+          zip -rq python.zip python
